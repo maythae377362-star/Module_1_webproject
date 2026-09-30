@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection -VELORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">V</div>
+                <div>
+                    <div class="brand-title">VELORA</div>
+                    <div class="brand-subtitle">HAUTE COUTURE</div>
+                </div>
+            </a>
+
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <header class="site-header">
+                <nav class="header-container">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="collection.html" class="nav-link">Menu/Shop</a></li>
+                        <li><a href="lookbook.html" class="nav-link">Gallery</a></li>
+                        <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="section-header">
+            <span class="sub-heading">CLIENT PORTAL</span>
+            <h1 class="section-title">Sign In to Your Account</h1>
+            <p class="section-subtitle">Access your orders, concierge appointments, and private collection preferences.
+            </p>
+        </div>
+
+        <div class="login-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="........" required>
+                </div>
+                <div class="form-actions">
+                    <label style="font-size: 0.8rem; font-weight: normal; text-transform: none;">
+                        <input type="checkbox" style="width: auto; margin-right: 6px;"> Remember me </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-dark btn-full">SIGN IN</button>
+
+            </form>
+            <div class="form-footer">
+                Don't have an account? <a href="#">Create a Maison Profile</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 VELORA Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classlist.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

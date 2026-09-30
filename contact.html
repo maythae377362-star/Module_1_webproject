@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection -VELORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">V</div>
+                <div>
+                    <div class="brand-title">VELORA</div>
+                    <div class="brand-subtitle">HAUTE COUTURE</div>
+                </div>
+            </a>
+
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <header class="site-header">
+                <nav class="header-container">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="collection.html" class="nav-link active">Menu/Shop</a></li>
+                        <li><a href="lookbook.html" class="nav-link">Gallery</a></li>
+                        <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <h1 class="section-title">Get in Touch</h1>
+        <p class="section-subtitle">Our Client Concierge is at Your Service</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-card">
+                <h3 class="serif-text card-heading">Flagship Boutique</h3>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-title">Address</div>
+                    <div class="contact-info-text">740 Fifth Avenue, Suite 1200<br>New York, NY 10019</div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-title">Concierge Phone</div>
+                    <div class="contact-info-text">+1 (800) 555-8356</div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-title">Email Inquiries</div>
+                    <div class="contact-info-text">concierge@velora-boutique.com</div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-title">Boutique Hours</div>
+                    <div class="contact-info-text">Monday-Saturday: 10:00 AM-7:00 PM<br>Sunday: By Private
+                        Appointment</div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h3 class="serif-text card-heading">Send a Message</h3>
+                <form
+                    onsubmit="event.preventDefault(); alert('Thank you for contacting VELORA Concierge. We will reply shortly.');">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required placeholder="jane@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required placeholder="How may our concierge assist you today?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 VELORA Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classlist.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

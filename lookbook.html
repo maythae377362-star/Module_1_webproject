@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection -VELORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">V</div>
+                <div>
+                    <div class="brand-title">VELORA</div>
+                    <div class="brand-subtitle">HAUTE COUTURE</div>
+                </div>
+            </a>
+
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <header class="site-header">
+                <nav class="header-container">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="collection.html" class="nav-link">Menu/Shop</a></li>
+                        <li><a href="lookbook.html" class="nav-link">Gallery</a></li>
+                        <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="section-header">
+            <span class="sub-heading"> EDITORIAL CAMPAIGN</span>
+            <h1 class="section-title">The Seasonal Lookbook</h1>
+            <p class="section-subtitle">Visual highlights of our newest bespoke creations and editorial lifestyle
+                shoots.</p>
+        </div>
+        <div class="lookbook-grid">
+            <div class="lookbook-item">
+                <img src="images/lookbook-1.jpg" alt="Automne Haute Leather Edition">
+                <div class="lookbook-overlay">
+                    <h3>Automne Haute Leather</h3>
+                    <p>Geneva Studio • Paris Edition</p>
+                </div>
+
+                <div class="lookbook-item">
+                    <img src="images/lookbook-2.jpg" alt="Grand Complications Series">
+                    <div class="lookbook-overlay">
+                        <h3>Grand Complications</h3>
+                        <p>Swiss Craftsmanship</p>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="images/Lookbook-3.jpg" alt="Discreet Fine Jewellery">
+                    <div class="lookbook-overlay">
+                        <h3>Discreet Opulence</h3>
+                        <p>High jewellery Collection</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 VELORA Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classlist.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection -VELORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-badge">V</div>
+                <div>
+                    <div class="brand-title">VELORA</div>
+                    <div class="brand-subtitle">HAUTE COUTURE</div>
+                </div>
+            </a>
+
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <header class="site-header">
+                <nav class="header-container">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="collection.html" class="nav-link active">Menu/Shop</a></li>
+                        <li><a href="lookbook.html" class="nav-link">Gallery</a></li>
+                        <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <h1 class="section-title">The Boutique Collection</h1>
+        <p class="section-subtitle">Handbags, Watches, Jewellery, Shoes & Accessories</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/handbag-1.jpg" alt="Monogram Leather Tote">
+                <div class="product-info">
+                    <div class="product-category">Handbags</div>
+                    <h3 class="product-name">Monogram Leather Tote</h3>
+                    <div class="product-price">$3,200</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/watch-1.jpg" alt="Swiss Automatic Chronograph">
+                <div class="product-info">
+                    <div class="product-category">Luxury Watches</div>
+                    <h3 class="product-name">Swiss Automatic Chronograph</h3>
+                    <div class="product-price">$12,500</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/jewellery-1.jpg" alt="Solitaire Diamond Band">
+                <div class="product-info">
+                    <div class="product-category">Jewellery</div>
+                    <h3 class="product-name">Solitaire Diamond Band</h3>
+                    <div class="product-price">$6,400</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 VELORA Boutique. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById('navMenu');
+            nav.classlist.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
